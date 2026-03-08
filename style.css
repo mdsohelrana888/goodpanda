@@ -1,0 +1,370 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #444;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Typography */
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 80px 0 30px;
+    color: #000;
+}
+
+/* Common Button Styles */
+.btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #ff3377;
+    color: #fff;
+    font-weight: 600;
+}
+.btn-primary:hover {
+    background-color: #e62263;
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 28px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+}
+.btn-dark i {
+    font-size: 14px;
+}
+.btn-dark:hover {
+    background-color: #333;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15px;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    height: 48px; /* Based on typical size */
+}
+
+.menu-icon img {
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #fceae8;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 80px;
+    margin-bottom: 50px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    color: #212529;
+}
+
+.hero-content p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.hero-content .price {
+    font-size: 44px;
+    color: #ff3377;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Categories Section */
+.categories {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.category-card {
+    flex: 1;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    color: #fff;
+}
+
+.category-card h3 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.category-card img {
+    height: 80px;
+    object-fit: contain;
+}
+
+.watch-card { background-color: #f29c38; }
+.bag-card { background-color: #f92f6f; }
+.shoes-card { background-color: #3a23d6; }
+
+/* Products Section (Shoes & Backpacks) */
+.product-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
+    padding: 30px 20px;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Exact shadow */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-img {
+    border-radius: 12px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.product-img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.product-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.product-info p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+.product-info .product-price {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #fceae8;
+    border-radius: 12px;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+.newsletter h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.newsletter p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.subscribe-form .submit-btn {
+    border-radius: 0 8px 8px 0;
+    padding: 16px 40px;
+}
+
+/* Responsiveness */
+
+/* Laptop Device (max-width: 1200px) */
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+    .hero-content h1 {
+        font-size: 42px;
+    }
+    .hero {
+        padding: 50px 40px;
+    }
+}
+
+/* Tablet Device (max-width: 992px) */
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+    .categories {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .category-card {
+        flex-basis: calc(50% - 15px);
+        min-width: 300px;
+    }
+    .product-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .product-card {
+        flex-basis: calc(50% - 15px);
+        min-width: 300px;
+    }
+    .newsletter {
+        padding: 60px 20px;
+    }
+}
+
+/* Mobile Device (max-width: 640px) */
+@media screen and (max-width: 640px) {
+    .hero {
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .hero-img {
+        justify-content: center;
+        width: 100%;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .categories {
+        flex-direction: column;
+    }
+    .category-card {
+        flex-basis: 100%;
+        min-width: 100%;
+    }
+    
+    .product-card {
+        flex-basis: 100%;
+        min-width: 100%;
+    }
+    
+    .subscribe-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe-form input {
+        border-radius: 8px;
+        margin-bottom: 15px;
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+    }
+    .subscribe-form .submit-btn {
+        border-radius: 8px;
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Small devices (max-width: 320px) */
+@media screen and (max-width: 320px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    .hero-content .price {
+        font-size: 32px;
+    }
+    .category-card h3 {
+        font-size: 22px;
+    }
+    .section-title {
+        font-size: 26px;
+    }
+    .newsletter h2 {
+        font-size: 26px;
+    }
+}
